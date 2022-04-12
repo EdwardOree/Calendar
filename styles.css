@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.page-container {
+    background-color:deepskyblue;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    width: 75vw;
+    height: 5rem;
+}
+
+.month-name {
+    color: darkblue;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.day-of-week-wrapper {
+    border: 2.5px groove darkblue;
+    display: grid;
+    grid-template-rows: 3em 1fr;
+    width: 75vw;
+    gap: 1.5px;
+    background-color: aqua;
+}
+
+.day-weekends {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5px;
+    background-color: skyblue;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    color: slategrey;
+}
+
+.weekend {
+    border: 2px ridge darkblue;
+}
+
+.dates-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+}
+
+.date-squares {
+    height: 4rem;
+    position: relative;
+    border: 0.75px dotted blue;
+}
+
+.overflow {
+    background-color: lightblue;
+}
+
+.date {
+    background-color: darkblue;
+    color: antiquewhite;
+    font-size: 130%;
+    width: 100%;
+    height: 28%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.date-squares textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+
+.footer-wrapper {
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 2.5em;
+}
+
+.year {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
